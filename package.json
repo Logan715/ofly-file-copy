@@ -1,13 +1,19 @@
 {
 	"name": "@cmz/file-copy",
 	"version": "1.0.0",
-	"description": "",
+	"description": "file copy",
 	"main": "index.js",
+	"bin": "bin/file-copy.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"help": "node ./src/index.js --help",
 		"dev": "node ./src/index.js --out-dir dist/es --src node_modules --verbose",
 		"build": "webpack --config webpack.config.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Logan715/cmz-file-copy.git"
+	},
+	"homepage": "https://github.com/Logan715/cmz-file-copy",
 	"dependencies": {
 		"chalk": "^4.1.0",
 		"fs": "0.0.1-security",
@@ -16,13 +22,20 @@
 		"minimist": "^1.2.5",
 		"ora": "^5.1.0"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"file-copy",
+		"copy"
+	],
+	"author": {
+		"name": "chenmingzhi",
+		"email": "cmingzhi_sdu@163.com"
+	},
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"assert": "^2.0.0",
 		"babel-loader": "^8.2.2",
+		"commander": "^7.0.0",
 		"constants-browserify": "^1.0.0",
 		"loadsh": "0.0.4",
 		"path-browserify": "^1.0.1",

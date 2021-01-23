@@ -30,7 +30,10 @@ const copyDirection = (fromPath, toPath, { exclude, verbose }) => {
 			if (!exclude.some((reg) => extname === reg)) {
 				copyFile(path.join(fromPath, file.name), path.join(toPath, file.name));
 			} else {
-				console.log(`ignore file : ${chalk.gray(fromPath + "/" + file.name)}`);
+				Console(
+					verbose,
+					`ignore file : ${chalk.gray(fromPath + "/" + file.name)}`
+				);
 			}
 		}
 	});
