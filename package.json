@@ -1,0 +1,33 @@
+{
+	"name": "@cmz/file-copy",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "node ./src/index.js --out-dir dist/es --src node_modules --verbose",
+		"build": "webpack --config webpack.config.js"
+	},
+	"dependencies": {
+		"chalk": "^4.1.0",
+		"fs": "0.0.1-security",
+		"fs-extra": "^9.0.1",
+		"inquirer": "^7.3.3",
+		"minimist": "^1.2.5",
+		"ora": "^5.1.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"assert": "^2.0.0",
+		"babel-loader": "^8.2.2",
+		"constants-browserify": "^1.0.0",
+		"loadsh": "0.0.4",
+		"path-browserify": "^1.0.1",
+		"stream-browserify": "^3.0.0",
+		"webpack": "^5.17.0",
+		"webpack-cli": "^4.4.0"
+	}
+}

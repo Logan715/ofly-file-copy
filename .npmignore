@@ -1,0 +1,6 @@
+dist
+node_modules
+src
+.npmignore
+package-lock.json
+webpack.config.js
