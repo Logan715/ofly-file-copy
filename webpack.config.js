@@ -5,7 +5,7 @@ module.exports = {
 	mode: "production",
 	output: {
 		filename: "file-copy.js",
-		path: path.resolve(__dirname, "bin"),
+		path: path.resolve(__dirname, "dist"),
 	},
 	target: "node",
 	module: {

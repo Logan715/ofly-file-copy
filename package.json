@@ -1,9 +1,11 @@
 {
-	"name": "@cmz/file-copy",
-	"version": "1.0.0",
+	"name": "@ofly/file-copy",
+	"version": "1.0.6",
 	"description": "file copy",
 	"main": "index.js",
-	"bin": "bin/file-copy.js",
+	"bin": {
+		"file-copy": "bin/file-copy.js"
+	},
 	"scripts": {
 		"help": "node ./src/index.js --help",
 		"dev": "node ./src/index.js --out-dir dist/es --src node_modules --verbose",
@@ -12,6 +14,9 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Logan715/cmz-file-copy.git"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"homepage": "https://github.com/Logan715/cmz-file-copy",
 	"dependencies": {
